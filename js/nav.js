@@ -40,24 +40,22 @@ if (!navbarMenu || !hamburgerMenu || !serviceMenu || !dropdownToggle) {
     });
 
     dropdownToggle.addEventListener('click', function (e) {
+        // Desktop: let the href navigate; CSS hover already handles the dropdown
+        if (!isMobileView()) return;
+
+        // Mobile: toggle dropdown instead of navigating
         e.preventDefault();
         const isServiceOpen = serviceMenu.classList.contains('open');
         if (!isServiceOpen) {
             serviceMenu.setAttribute('aria-expanded', true);
             serviceMenu.classList.add('open');
             dropdownToggle.setAttribute('aria-expanded', true);
-            if (isMobileView()) {
-                // Hide all other nav links when dropdown is open
-                setNavItemsDisplay('none');
-            }
+            setNavItemsDisplay('none');
         } else {
             serviceMenu.setAttribute('aria-expanded', false);
             serviceMenu.classList.remove('open');
             dropdownToggle.setAttribute('aria-expanded', false);
-            if (isMobileView()) {
-                // Reveal all links when dropdown closes
-                setNavItemsDisplay('block');
-            }
+            setNavItemsDisplay('block');
         }
     });
     // Close mobile nav when any nav link is clicked
