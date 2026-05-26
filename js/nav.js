@@ -60,4 +60,17 @@ if (!navbarMenu || !hamburgerMenu || !serviceMenu || !dropdownToggle) {
             }
         }
     });
+    // Close mobile nav when any nav link is clicked
+    document.querySelectorAll('#navbar-menu a').forEach((link) => {
+        link.addEventListener('click', () => {
+            if (navbarMenu.classList.contains('open')) {
+                navbarMenu.classList.remove('open');
+                hamburgerMenu.classList.remove('clicked');
+                hamburgerMenu.setAttribute('aria-expanded', false);
+                serviceMenu.classList.remove('open');
+                dropdownToggle.setAttribute('aria-expanded', false);
+                if (isMobileView()) setNavItemsDisplay('block');
+            }
+        });
+    });
 }

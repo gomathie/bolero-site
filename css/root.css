@@ -3,6 +3,10 @@
 <--- -------------------------- -*/
 
 
+/* Smooth in-page anchor scrolling */
+html { scroll-behavior: smooth; }
+
+
 
 /*-- -------------------------- -->
 <---        Core Styles         -->
