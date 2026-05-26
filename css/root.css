@@ -602,9 +602,6 @@ body.dark-mode #navigation #navbar-menu .dropdown.open .dropdown-menu {
   body.scroll #navigation #navbar-menu ul li a.active {
     color: var(--primary);
   }
-  body.scroll #dark-mode-toggle svg path {
-    fill: #000;
-  }
   body.dark-mode #navigation .background-color-div {
     height: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

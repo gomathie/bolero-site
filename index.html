@@ -129,11 +129,14 @@
 </nav>
 
         <!--Dark Mode toggle-->
-        <button id="dark-mode-toggle">
-            <!--Moon is an inline SVG so you can edit the color if needed-->
-            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"></path></svg>
-            <img class="sun" aria-hidden="true" src="images/sun.svg" decoding="async" alt="light mode toggle icon" width="15" height="15">
-        </button>
+        <button id="dark-mode-toggle" aria-label="Basculer le mode sombre">
+        <span class="dmt-track">
+          <span class="dmt-thumb">
+            <svg class="dmt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="dmt-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </span>
+      </button>
     </div>
 </div>
         <main id="main">
@@ -158,9 +161,28 @@
       <div class="cs-button-group">
         <a href="#services" class="cs-button-solid">Découvrir nos services</a>
       </div>
-      <div class="cs-button-group" style="margin-top: 1rem; gap: 0.75rem; display: flex; flex-wrap: wrap;">
-        <a href="https://apps.apple.com/app/bolero-tracker/id6769682592" class="cs-button-solid" target="_blank" rel="noopener">Télécharger iOS</a>
-        <a href="https://play.google.com/store/apps/details?id=com.pilottelematics.bolero" class="cs-button-solid" target="_blank" rel="noopener">Télécharger Android</a>
+      <div class="store-badges">
+        <a href="https://apps.apple.com/app/bolero-tracker/id6769682592" class="store-badge" target="_blank" rel="noopener" aria-label="Télécharger sur l'App Store">
+          <svg class="store-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <span class="store-text">
+            <small>Download on the</small>
+            <strong>App Store</strong>
+          </span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.pilottelematics.bolero" class="store-badge" target="_blank" rel="noopener" aria-label="Télécharger sur Google Play">
+          <svg class="store-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path fill="#4285F4" d="M3.6 2.3C3.2 2.6 3 3.1 3 3.7v16.6c0 .6.2 1.1.6 1.4L3.7 22 13.4 12 3.7 2z"/>
+            <path fill="#EA4335" d="M17.1 8.4l-2.7-1.6L3.6 2.3 13.4 12z"/>
+            <path fill="#FBBC05" d="M3.6 21.7l10.8-6.5 2.7-1.6L13.4 12z"/>
+            <path fill="#34A853" d="M20.6 10.6l-3.5-2.2-3.7 3.6 3.7 3.6 3.5-2.1c1-.6 1-2.3 0-2.9z"/>
+          </svg>
+          <span class="store-text">
+            <small>GET IT ON</small>
+            <strong>Google Play</strong>
+          </span>
+        </a>
       </div>
     </div>
   </div>
@@ -206,19 +228,10 @@
           <img decoding="async" src="images/service_2.png" alt="Solutions électroniques pour flotte" width="413" height="374" aria-hidden="true">
         </picture>
       </li>
-      <li class="cs-item">
-        <a href="services.html#conception" class="cs-link">
-          <span class="cs-number">03</span>
-          <h3 class="cs-h3">Conception de solutions sur mesure</h3>
-          <p class="cs-item-text">Conseil expert pour planifier et optimiser votre architecture télématique selon vos opérations.</p>
-        </a>
-        <picture class="cs-picture">
-          <img decoding="async" src="images/service_3.png" alt="Conception de solutions sur mesure" width="413" height="374" aria-hidden="true">
-        </picture>
-      </li>
+      
       <li class="cs-item">
         <a href="services.html#vente-materiel" class="cs-link">
-          <span class="cs-number">04</span>
+          <span class="cs-number">03</span>
           <h3 class="cs-h3">Vente de matériel GPS</h3>
           <p class="cs-item-text">Trackers 4G LTE, caméras embarquées et capteurs disponibles à Conakry avec garantie et support.</p>
         </a>
@@ -229,7 +242,7 @@
       </li>
       <li class="cs-item">
         <a href="services.html#maintenance" class="cs-link">
-          <span class="cs-number">05</span>
+          <span class="cs-number">04</span>
           <h3 class="cs-h3">Maintenance &amp; support</h3>
           <p class="cs-item-text">Contrats de maintenance, assistance téléphonique et interventions terrain pour une flotte toujours opérationnelle.</p>
         </a>
@@ -240,7 +253,7 @@
       </li>
       <li class="cs-item">
         <a href="services.html#formation" class="cs-link">
-          <span class="cs-number">06</span>
+          <span class="cs-number">05</span>
           <h3 class="cs-h3">Formation &amp; éducation</h3>
           <p class="cs-item-text">Programmes adaptés pour administrateurs, techniciens et conducteurs — en présentiel ou à distance.</p>
         </a>
@@ -250,7 +263,7 @@
       </li>
       <li class="cs-item">
         <a href="services.html#carburant" class="cs-link">
-          <span class="cs-number">07</span>
+          <span class="cs-number">06</span>
           <h3 class="cs-h3">Surveillance carburant</h3>
           <p class="cs-item-text">Capteurs de niveau haute précision, détection de vol et rapports de consommation pour réduire vos coûts carburant.</p>
         </a>

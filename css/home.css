@@ -119,6 +119,29 @@
   #hero-2042 .cs-button-solid:hover:before {
     width: 100%;
   }
+  .store-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  .store-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1.25rem 0.5rem 0.875rem;
+    border-radius: 0.625rem;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.18);
+    transition: opacity 0.18s, transform 0.18s;
+  }
+  .store-badge:hover { opacity: 0.8; transform: translateY(-2px); }
+  .store-icon { width: 1.875rem; height: 1.875rem; flex-shrink: 0; }
+  .store-text { display: flex; flex-direction: column; line-height: 1; }
+  .store-text small { font-size: 0.625rem; letter-spacing: 0.04em; opacity: 0.85; margin-bottom: 0.2rem; }
+  .store-text strong { font-size: 1.0625rem; font-weight: 700; letter-spacing: 0.01em; }
   #hero-2042 .cs-video-wrapper {
     width: 100%;
     /* changes to 90% at tablet, then back to 100% at desktop */
