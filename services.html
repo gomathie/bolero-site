@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nos Services — BoleroTraker | GPS &amp; Télématique Guinée</title>
-  <meta name="description" content="Découvrez tous les services BoleroTraker : installation GPS, solutions embarquées, conception, vente de matériel, maintenance et formation à Conakry.">
+  <meta name="description" content="Découvrez tous les services BoleroTraker : installation GPS, solutions embarquées, surveillance carburant, conception, vente de matériel, maintenance et formation à Conakry.">
   <link rel="canonical" href="https://www.bolerotraker.com/services.html">
   <link rel="icon" type="image/png" href="/images/logo-light.png">
   <link rel="stylesheet" href="/css/root.css">
@@ -29,6 +29,31 @@
     .svc-hub-card .sh-text { font-size: 1rem; color: var(--text-muted); line-height: 1.6; }
     .svc-hub-card .sh-cta { font-size: 0.9375rem; font-weight: 700; color: var(--primary); margin-top: auto; padding-top: 0.5rem; }
     body.dark-mode .svc-hub-card { background: oklch(0.18 0.02 28); border-color: oklch(0.25 0.02 28); border-top-color: var(--primary); }
+    .sp-service-block { scroll-margin-top: 5rem; }
+    .sp-service-title-bar {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .sp-service-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.875rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    .svc-divider {
+      border: none;
+      border-top: 1px solid var(--border-muted);
+      margin: 0;
+    }
   </style>
 </head>
 <body class="interior">
@@ -49,12 +74,13 @@
           <li class="dropdown" id="services">
             <a class="dropdown-toggle active" href="services.html" tabindex="0" aria-expanded="false" aria-controls="services-submenu">Services</a>
             <ul class="dropdown-menu" id="services-submenu">
-              <li><a class="dropdown-menu-item" href="mobile-telematics-installations.html"><span class="dmi-title">Installations télématiques</span><span class="dmi-desc">GPS, caméras &amp; capteurs sur site</span></a></li>
-              <li><a class="dropdown-menu-item" href="fleet-electronics-solutions.html"><span class="dmi-title">Solutions embarquées</span><span class="dmi-desc">Intégration électronique de flotte</span></a></li>
-              <li><a class="dropdown-menu-item" href="consultative-solution-design.html"><span class="dmi-title">Conception de solutions</span><span class="dmi-desc">Architecture télématique sur mesure</span></a></li>
-              <li><a class="dropdown-menu-item" href="device-sales.html"><span class="dmi-title">Vente de matériel</span><span class="dmi-desc">Trackers 4G, caméras, capteurs</span></a></li>
-              <li><a class="dropdown-menu-item" href="maintenance-support.html"><span class="dmi-title">Maintenance &amp; support</span><span class="dmi-desc">Contrats &amp; interventions terrain</span></a></li>
-              <li><a class="dropdown-menu-item" href="training-education.html"><span class="dmi-title">Formation</span><span class="dmi-desc">Pour vos équipes &amp; opérateurs</span></a></li>
+              <li><a class="dropdown-menu-item" href="services.html#installations"><span class="dmi-title">Installations télématiques</span><span class="dmi-desc">GPS, caméras &amp; capteurs sur site</span></a></li>
+              <li><a class="dropdown-menu-item" href="services.html#solutions-embarquees"><span class="dmi-title">Solutions embarquées</span><span class="dmi-desc">Intégration électronique de flotte</span></a></li>
+              <li><a class="dropdown-menu-item" href="services.html#conception"><span class="dmi-title">Conception de solutions</span><span class="dmi-desc">Architecture télématique sur mesure</span></a></li>
+              <li><a class="dropdown-menu-item" href="services.html#vente-materiel"><span class="dmi-title">Vente de matériel</span><span class="dmi-desc">Trackers 4G, caméras, capteurs</span></a></li>
+              <li><a class="dropdown-menu-item" href="services.html#maintenance"><span class="dmi-title">Maintenance &amp; support</span><span class="dmi-desc">Contrats &amp; interventions terrain</span></a></li>
+              <li><a class="dropdown-menu-item" href="services.html#formation"><span class="dmi-title">Formation</span><span class="dmi-desc">Pour vos équipes &amp; opérateurs</span></a></li>
+              <li><a class="dropdown-menu-item" href="services.html#carburant"><span class="dmi-title">Surveillance carburant</span><span class="dmi-desc">Capteurs, alertes &amp; analyse de consommation</span></a></li>
             </ul>
           </li>
           <li id="about-us"><a href="about.html">À propos</a></li>
@@ -75,48 +101,427 @@
       <picture><img src="/images/hero_img_3.png" alt="services BoleroTraker" loading="eager" decoding="async"></picture>
     </section>
 
+    <!-- Overview hub -->
     <section class="sp-section">
       <div class="sp-container">
         <span class="sp-label">Ce que nous faisons</span>
-        <h2 class="sp-title">Six services pour optimiser votre flotte</h2>
+        <h2 class="sp-title">Sept services pour optimiser votre flotte</h2>
         <p class="sp-intro">De l'installation initiale au support continu, BoleroTraker couvre l'ensemble du cycle de vie de votre solution télématique — avec des techniciens basés à Conakry.</p>
         <div class="sp-grid" style="margin-top:2.5rem">
-          <a href="mobile-telematics-installations.html" class="svc-hub-card">
+          <a href="#installations" class="svc-hub-card">
             <div class="sh-num">01</div>
             <div class="sh-title">Installations télématiques mobiles</div>
             <p class="sh-text">Trackers GPS, caméras embarquées, capteurs de carburant et systèmes d'alerte installés sur site par nos techniciens qualifiés.</p>
-            <span class="sh-cta">En savoir plus →</span>
+            <span class="sh-cta">En savoir plus ↓</span>
           </a>
-          <a href="fleet-electronics-solutions.html" class="svc-hub-card">
+          <a href="#solutions-embarquees" class="svc-hub-card">
             <div class="sh-num">02</div>
             <div class="sh-title">Solutions électroniques embarquées</div>
             <p class="sh-text">Intégration avancée : lecture de bus CAN, communications embarquées, surveillance moteur et capteurs multi-sources.</p>
-            <span class="sh-cta">En savoir plus →</span>
+            <span class="sh-cta">En savoir plus ↓</span>
           </a>
-          <a href="consultative-solution-design.html" class="svc-hub-card">
+          <a href="#conception" class="svc-hub-card">
             <div class="sh-num">03</div>
             <div class="sh-title">Conception de solutions sur mesure</div>
             <p class="sh-text">Audit de vos besoins, spécifications techniques, plan d'intégration et prototype pour une architecture télématique optimale.</p>
-            <span class="sh-cta">En savoir plus →</span>
+            <span class="sh-cta">En savoir plus ↓</span>
           </a>
-          <a href="device-sales.html" class="svc-hub-card">
+          <a href="#vente-materiel" class="svc-hub-card">
             <div class="sh-num">04</div>
             <div class="sh-title">Vente de matériel GPS</div>
             <p class="sh-text">Trackers 4G LTE, caméras cabine, capteurs de carburant et accessoires — disponibles à Conakry avec garantie et support.</p>
-            <span class="sh-cta">En savoir plus →</span>
+            <span class="sh-cta">En savoir plus ↓</span>
           </a>
-          <a href="maintenance-support.html" class="svc-hub-card">
+          <a href="#maintenance" class="svc-hub-card">
             <div class="sh-num">05</div>
             <div class="sh-title">Maintenance &amp; support</div>
             <p class="sh-text">Contrats de maintenance préventive, assistance téléphonique et interventions terrain pour garder votre flotte opérationnelle.</p>
-            <span class="sh-cta">En savoir plus →</span>
+            <span class="sh-cta">En savoir plus ↓</span>
           </a>
-          <a href="training-education.html" class="svc-hub-card">
+          <a href="#formation" class="svc-hub-card">
             <div class="sh-num">06</div>
             <div class="sh-title">Formation &amp; éducation</div>
             <p class="sh-text">Programmes adaptés pour administrateurs de flotte, techniciens et conducteurs — en présentiel ou à distance.</p>
-            <span class="sh-cta">En savoir plus →</span>
+            <span class="sh-cta">En savoir plus ↓</span>
           </a>
+          <a href="#carburant" class="svc-hub-card">
+            <div class="sh-num">07</div>
+            <div class="sh-title">Surveillance carburant</div>
+            <p class="sh-text">Capteurs de niveau haute précision, alertes de vol en temps réel et rapports de consommation pour maîtriser vos coûts.</p>
+            <span class="sh-cta">En savoir plus ↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="svc-divider">
+
+    <!-- ── 01 Installations télématiques ─────────────────────────────── -->
+    <section id="installations" class="sp-section sp-service-block">
+      <div class="sp-container">
+        <div class="sp-service-title-bar">
+          <span class="sp-service-num">01</span>
+          <span class="sp-label" style="margin:0">Notre processus</span>
+        </div>
+        <h2 class="sp-title">Installations télématiques mobiles</h2>
+        <p class="sp-intro">Chaque installation suit un processus rigoureux pour garantir un fonctionnement optimal dès le premier jour. Nos techniciens viennent à vous — où que soit votre flotte à Conakry.</p>
+        <div class="sp-grid two-col" style="margin-top:2.5rem">
+          <div class="sp-card">
+            <div class="sp-card-num">01</div>
+            <div class="sp-card-title">Audit &amp; planification</div>
+            <p class="sp-card-text">Évaluation de votre flotte, choix du matériel adapté (type de véhicule, réseau disponible, besoins spécifiques), définition du plan d'installation et du calendrier d'intervention.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">02</div>
+            <div class="sp-card-title">Installation professionnelle</div>
+            <p class="sp-card-text">Câblage soigné, fixation sécurisée des dispositifs, connexion à l'alimentation véhicule et au bus CAN si applicable. Intervention propre et discrète sur chaque véhicule.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">03</div>
+            <div class="sp-card-title">Configuration &amp; test</div>
+            <p class="sp-card-text">Activation sur la plateforme BoleroTraker, paramétrage des alertes (vitesse, géofencing, décrochage), vérification de la transmission des données en temps réel.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">04</div>
+            <div class="sp-card-title">Formation &amp; remise</div>
+            <p class="sp-card-text">Présentation de la plateforme à vos responsables, remise du rapport d'installation et des accès. Assistance par téléphone pendant 30 jours après la mise en service.</p>
+          </div>
+        </div>
+        <div class="sp-two-col" style="margin-top:2rem">
+          <div class="sp-col">
+            <ul class="sp-list">
+              <li>Trackers GPS 4G LTE avec suivi en temps réel</li>
+              <li>Caméras cabine et route en HD</li>
+              <li>Capteurs de niveau de carburant</li>
+              <li>Interfaces bus CAN et OBD-II</li>
+            </ul>
+          </div>
+          <div class="sp-col">
+            <ul class="sp-list">
+              <li>Boutons panique et systèmes d'alerte</li>
+              <li>Relais de coupure moteur à distance</li>
+              <li>Détecteurs de choc et d'ouverture</li>
+              <li>Antennes externes pour zones difficiles</li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top:2rem">
+          <a href="contact.html" class="button-solid">Demander une intervention</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="svc-divider">
+
+    <!-- ── 02 Solutions embarquées ────────────────────────────────────── -->
+    <section id="solutions-embarquees" class="sp-section alt sp-service-block">
+      <div class="sp-container">
+        <div class="sp-service-title-bar">
+          <span class="sp-service-num">02</span>
+          <span class="sp-label" style="margin:0">Technologies intégrées</span>
+        </div>
+        <h2 class="sp-title">Solutions électroniques embarquées</h2>
+        <p class="sp-intro">Nos solutions électroniques embarquées transforment chaque véhicule en source de données exploitables : données moteur, comportement conducteur, vidéo embarquée et alertes intelligentes — le tout centralisé sur votre plateforme.</p>
+        <div class="sp-grid" style="margin-top:2.5rem">
+          <div class="sp-card">
+            <div class="sp-card-num">CAN</div>
+            <div class="sp-card-title">Lecture bus CAN</div>
+            <p class="sp-card-text">Accès aux données moteur en profondeur : RPM, températures, pression d'huile, codes défauts DTC. Anticipez les pannes avant qu'elles surviennent.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">DMS</div>
+            <div class="sp-card-title">Surveillance conducteur</div>
+            <p class="sp-card-text">Détection de la fatigue, des distractions et des comportements à risque via caméra IA. Alertes en temps réel pour le responsable de flotte et le conducteur.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">DVR</div>
+            <div class="sp-card-title">Vidéo embarquée</div>
+            <p class="sp-card-text">Système d'enregistrement multi-caméras avec stockage SD local et upload cloud. Reconstitution d'incidents, preuve d'accidents et sécurité conducteur.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">FMS</div>
+            <div class="sp-card-title">Gestion de carburant</div>
+            <p class="sp-card-text">Capteurs de niveau haute précision avec détection des anomalies de consommation et des siphonnages. ROI typique de 3 à 6 mois pour les grandes flottes.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">IOT</div>
+            <div class="sp-card-title">Capteurs &amp; IoT</div>
+            <p class="sp-card-text">Température pour véhicules frigorifiques, détecteurs de chargement, capteurs de poids, alertes d'ouverture de portes — intégration selon vos besoins métier.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">API</div>
+            <div class="sp-card-title">Intégration systèmes tiers</div>
+            <p class="sp-card-text">Flux de données vers vos ERP, logiciels de dispatch ou tableaux de bord personnalisés via API REST. Connectez BoleroTraker à vos outils existants.</p>
+          </div>
+        </div>
+        <ul class="sp-list" style="margin-top:2rem">
+          <li>Réduction de la consommation de carburant de 10 à 20 % grâce à la surveillance comportementale</li>
+          <li>Maintenance prédictive : moins de pannes imprévues et de véhicules immobilisés</li>
+          <li>Protection renforcée contre le vol et le détournement de véhicules</li>
+          <li>Données probantes pour les litiges et déclarations d'assurance</li>
+        </ul>
+        <div style="margin-top:2rem">
+          <a href="contact.html" class="button-solid">Discuter de votre projet</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="svc-divider">
+
+    <!-- ── 03 Conception de solutions ────────────────────────────────── -->
+    <section id="conception" class="sp-section sp-service-block">
+      <div class="sp-container">
+        <div class="sp-service-title-bar">
+          <span class="sp-service-num">03</span>
+          <span class="sp-label" style="margin:0">Notre approche</span>
+        </div>
+        <h2 class="sp-title">Conception de solutions sur mesure</h2>
+        <p class="sp-intro">Avant d'acheter du matériel ou de souscrire à un abonnement, il est essentiel de définir la bonne architecture. Notre service de conception vous accompagne de l'analyse de vos besoins à la livraison d'un dossier technique complet et d'un prototype validé.</p>
+        <div class="sp-grid two-col" style="margin-top:2.5rem">
+          <div class="sp-card">
+            <div class="sp-card-num">01</div>
+            <div class="sp-card-title">Analyse des besoins</div>
+            <p class="sp-card-text">Entretien approfondi avec vos équipes opérationnelles et techniques. Cartographie de votre flotte, vos enjeux prioritaires (sécurité, coûts, conformité) et vos contraintes budgétaires.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">02</div>
+            <div class="sp-card-title">Spécifications techniques</div>
+            <p class="sp-card-text">Document de référence décrivant l'architecture de la solution : matériel retenu, protocoles de communication, flux de données, KPIs à mesurer et infrastructure réseau requise.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">03</div>
+            <div class="sp-card-title">Plan d'intégration</div>
+            <p class="sp-card-text">Planification détaillée du déploiement : ordre d'installation des véhicules, plan de formation, tests d'acceptance et procédures de mise en production progressive.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">04</div>
+            <div class="sp-card-title">Prototype &amp; validation</div>
+            <p class="sp-card-text">Installation pilote sur 1 à 3 véhicules pour valider les hypothèses techniques. Ajustements avant déploiement à grande échelle — évite les mauvaises surprises en production.</p>
+          </div>
+        </div>
+        <ul class="sp-list" style="margin-top:2rem">
+          <li>Rapport d'audit de votre flotte et de vos besoins</li>
+          <li>Spécifications techniques complètes (matériel, réseau, plateforme)</li>
+          <li>Plan d'intégration avec calendrier et responsabilités</li>
+          <li>Estimation budgétaire détaillée pour le déploiement complet</li>
+        </ul>
+        <div style="margin-top:2rem">
+          <a href="contact.html" class="button-solid">Demander une étude</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="svc-divider">
+
+    <!-- ── 04 Vente de matériel ───────────────────────────────────────── -->
+    <section id="vente-materiel" class="sp-section alt sp-service-block">
+      <div class="sp-container">
+        <div class="sp-service-title-bar">
+          <span class="sp-service-num">04</span>
+          <span class="sp-label" style="margin:0">Notre gamme</span>
+        </div>
+        <h2 class="sp-title">Vente de matériel GPS &amp; télématique</h2>
+        <p class="sp-intro">Nous proposons une sélection de matériel éprouvé, testé en conditions réelles en Afrique de l'Ouest. Chaque appareil est compatible avec notre plateforme de suivi cloud et livré avec garantie et support local.</p>
+        <div class="sp-grid" style="margin-top:2.5rem">
+          <div class="sp-card">
+            <div class="sp-card-num">4G</div>
+            <div class="sp-card-title">Trackers GPS 4G LTE</div>
+            <p class="sp-card-text">Suivi en temps réel avec connectivité 4G LTE. Position toutes les 10 secondes, historique 3 mois, alertes vitesse et géofencing. Compatible SIM locale ou roaming.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">HD</div>
+            <div class="sp-card-title">Caméras embarquées</div>
+            <p class="sp-card-text">Caméras cabine et route en HD avec enregistrement sur carte SD locale et transmission cloud. Idéal pour la sécurité conducteur et la gestion des incidents.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">L/h</div>
+            <div class="sp-card-title">Capteurs de carburant</div>
+            <p class="sp-card-text">Mesure précise du niveau de carburant en temps réel. Détection des siphonnages et anomalies de consommation. Retour sur investissement rapide pour les grandes flottes.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">CAN</div>
+            <div class="sp-card-title">Interfaces bus CAN/OBD</div>
+            <p class="sp-card-text">Lecture des données moteur (RPM, températures, codes défauts) via le bus CAN ou le port OBD-II. Idéal pour la maintenance prédictive.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">SOS</div>
+            <div class="sp-card-title">Boutons panique &amp; alarmes</div>
+            <p class="sp-card-text">Boutons d'alerte conducteur, détecteurs de choc et capteurs de température pour véhicules frigorifiques et transport de valeurs.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">ACC</div>
+            <div class="sp-card-title">Accessoires &amp; câblage</div>
+            <p class="sp-card-text">Câbles d'alimentation, antennes externes, relais de coupure moteur, boîtiers étanches et tout le matériel nécessaire à une installation soignée.</p>
+          </div>
+        </div>
+        <ul class="sp-list" style="margin-top:2rem">
+          <li>Garantie 12 mois sur tous les appareils</li>
+          <li>Compatibilité testée avec notre plateforme BoleroTraker</li>
+          <li>Stock disponible à Conakry — pas d'attente de livraison internationale</li>
+          <li>Support technique en français inclus pendant 3 mois</li>
+        </ul>
+        <div style="margin-top:2rem">
+          <a href="contact.html" class="button-solid">Demander un devis</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="svc-divider">
+
+    <!-- ── 05 Maintenance & support ──────────────────────────────────── -->
+    <section id="maintenance" class="sp-section sp-service-block">
+      <div class="sp-container">
+        <div class="sp-service-title-bar">
+          <span class="sp-service-num">05</span>
+          <span class="sp-label" style="margin:0">Notre support</span>
+        </div>
+        <h2 class="sp-title">Maintenance &amp; support</h2>
+        <p class="sp-intro">Nous proposons des contrats de maintenance adaptés à la taille de votre flotte — avec des délais d'intervention garantis et un suivi transparent de chaque ticket.</p>
+        <div class="sp-grid two-col" style="margin-top:2.5rem">
+          <div class="sp-card">
+            <div class="sp-card-num">01</div>
+            <div class="sp-card-title">Assistance téléphonique</div>
+            <p class="sp-card-text">Ligne dédiée du lundi au samedi, 8h–18h. Un technicien répond et diagnostique votre problème en temps réel. La plupart des pannes logicielles sont résolues par téléphone.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">02</div>
+            <div class="sp-card-title">Télémaintenance</div>
+            <p class="sp-card-text">Accès distant à vos dispositifs pour mise à jour firmware, reconfiguration et diagnostic approfondi — sans déplacement, pour des interventions rapides.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">03</div>
+            <div class="sp-card-title">Intervention terrain</div>
+            <p class="sp-card-text">Si le problème nécessite une présence physique, nos techniciens interviennent à Conakry sous 24h ouvrées. Remplacement de matériel défectueux inclus selon contrat.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">04</div>
+            <div class="sp-card-title">Maintenance préventive</div>
+            <p class="sp-card-text">Contrôle périodique de vos installations : vérification des connexions, mise à jour des configurations, test de couverture réseau et rapport d'état de la flotte.</p>
+          </div>
+        </div>
+        <div class="sp-two-col" style="margin-top:2rem">
+          <div class="sp-col">
+            <ul class="sp-list">
+              <li>Diagnostic et correction des pannes de tracking</li>
+              <li>Mises à jour logicielles et firmware</li>
+              <li>Remplacement des dispositifs défectueux (selon formule)</li>
+              <li>Rapport mensuel d'état des dispositifs</li>
+            </ul>
+          </div>
+          <div class="sp-col">
+            <ul class="sp-list">
+              <li>Accès prioritaire à notre équipe technique</li>
+              <li>Interventions terrain incluses dans les formules supérieures</li>
+              <li>Support à la configuration des nouveaux utilisateurs</li>
+              <li>Assistance pour les intégrations API</li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top:2rem">
+          <a href="contact.html" class="button-solid">Demander un contrat</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="svc-divider">
+
+    <!-- ── 06 Formation ──────────────────────────────────────────────── -->
+    <section id="formation" class="sp-section alt sp-service-block">
+      <div class="sp-container">
+        <div class="sp-service-title-bar">
+          <span class="sp-service-num">06</span>
+          <span class="sp-label" style="margin:0">Nos programmes</span>
+        </div>
+        <h2 class="sp-title">Formation &amp; éducation</h2>
+        <p class="sp-intro">Un système télématique n'est performant que si vos équipes savent l'utiliser. Nos programmes de formation sont conçus pour chaque profil — des gestionnaires de flotte aux conducteurs, en passant par les techniciens d'installation.</p>
+        <div class="sp-grid two-col" style="margin-top:2.5rem">
+          <div class="sp-card">
+            <div class="sp-card-num">01</div>
+            <div class="sp-card-title">Administrateurs de flotte</div>
+            <p class="sp-card-text">Maîtrisez la plateforme BoleroTraker : gestion des véhicules et conducteurs, création de rapports, paramétrage des alertes géofencing, lecture des données de consommation et export de données.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">02</div>
+            <div class="sp-card-title">Techniciens d'installation</div>
+            <p class="sp-card-text">Installation correcte des trackers, câblage professionnel, connexion aux interfaces CAN/OBD, configuration réseau et procédures de test post-installation.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">03</div>
+            <div class="sp-card-title">Conducteurs</div>
+            <p class="sp-card-text">Sensibilisation au suivi GPS, utilisation de l'application mobile BoleroTraker, signalement d'incidents et bonnes pratiques de conduite pour réduire la consommation.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">04</div>
+            <div class="sp-card-title">Managers &amp; dirigeants</div>
+            <p class="sp-card-text">Lecture des KPIs clés, interprétation des rapports de flotte, identification des économies potentielles et utilisation des données pour les décisions stratégiques.</p>
+          </div>
+        </div>
+        <ul class="sp-list" style="margin-top:2rem">
+          <li>Sessions en présentiel dans vos locaux à Conakry</li>
+          <li>Formation à distance par visioconférence (Zoom, WhatsApp)</li>
+          <li>Supports de formation en français fournis (PDF, vidéos)</li>
+          <li>Sessions individuelles ou en groupe jusqu'à 20 participants</li>
+          <li>Certification de participation délivrée à chaque stagiaire</li>
+        </ul>
+        <div style="margin-top:2rem">
+          <a href="contact.html" class="button-solid">Réserver une formation</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="svc-divider">
+
+    <!-- ── 07 Surveillance carburant ─────────────────────────────────── -->
+    <section id="carburant" class="sp-section sp-service-block">
+      <div class="sp-container">
+        <div class="sp-service-title-bar">
+          <span class="sp-service-num">07</span>
+          <span class="sp-label" style="margin:0">Le problème que nous résolvons</span>
+        </div>
+        <h2 class="sp-title">Surveillance carburant</h2>
+        <p class="sp-intro">En Guinée, le vol de carburant et la surconsommation non détectée peuvent représenter 20 à 35 % des dépenses d'une flotte. Notre solution vous donne une visibilité complète, en temps réel, sur chaque litre consommé.</p>
+        <div class="sp-grid two-col" style="margin-top:2.5rem">
+          <div class="sp-card">
+            <div class="sp-card-num">01</div>
+            <div class="sp-card-title">Capteurs haute précision</div>
+            <p class="sp-card-text">Installation de capteurs ultrasoniques ou résistifs directement dans le réservoir. Précision à 1–2 % du volume total, compatible tous types de véhicules et engins.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">02</div>
+            <div class="sp-card-title">Alertes de vol en temps réel</div>
+            <p class="sp-card-text">Notification immédiate si une chute rapide du niveau est détectée hors plein ou hors zone autorisée. Historique horodaté de chaque événement suspect.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">03</div>
+            <div class="sp-card-title">Rapports de consommation</div>
+            <p class="sp-card-text">Tableaux de bord par véhicule, par conducteur et par période. Comparaison consommation réelle vs théorique, détection des anomalies et gains potentiels chiffrés.</p>
+          </div>
+          <div class="sp-card">
+            <div class="sp-card-num">04</div>
+            <div class="sp-card-title">Intégration GPS complète</div>
+            <p class="sp-card-text">Les données carburant sont corrélées avec la position, la vitesse et le régime moteur. Identifiez les comportements de conduite qui augmentent la consommation.</p>
+          </div>
+        </div>
+        <div class="sp-two-col" style="margin-top:2rem">
+          <div class="sp-col">
+            <ul class="sp-list">
+              <li>Niveau carburant en temps réel par véhicule</li>
+              <li>Détection instantanée de siphonage ou fuite</li>
+              <li>Historique complet des pleins effectués</li>
+              <li>Consommation aux 100 km par trajet</li>
+            </ul>
+          </div>
+          <div class="sp-col">
+            <ul class="sp-list">
+              <li>Comparatif mensuel par conducteur</li>
+              <li>Export Excel/PDF pour comptabilité</li>
+              <li>Alertes SMS ou email configurables</li>
+              <li>Compatible trackers BoleroTraker existants</li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top:2rem">
+          <a href="contact.html" class="button-solid">Demander une démonstration</a>
         </div>
       </div>
     </section>
@@ -135,7 +540,7 @@
       <div class="left-section"><a class="logo" href="/"><img loading="lazy" decoding="async" src="/images/logo-light.png" alt="logo" width="221" height="66"></a></div>
       <div class="right-section"><div class="lists">
         <ul><li><h2>Navigation</h2></li><li><a href="/">Accueil</a></li><li><a href="about.html">À propos</a></li><li><a href="services.html">Nos services</a></li><li><a href="contact.html">Contact</a></li></ul>
-        <ul><li><h2>Services</h2></li><li><a href="mobile-telematics-installations.html">Installations télématiques</a></li><li><a href="fleet-electronics-solutions.html">Solutions embarquées</a></li><li><a href="consultative-solution-design.html">Conception</a></li><li><a href="device-sales.html">Vente de matériel</a></li><li><a href="maintenance-support.html">Maintenance</a></li><li><a href="training-education.html">Formation</a></li></ul>
+        <ul><li><h2>Services</h2></li><li><a href="services.html#installations">Installations télématiques</a></li><li><a href="services.html#solutions-embarquees">Solutions embarquées</a></li><li><a href="services.html#conception">Conception</a></li><li><a href="services.html#vente-materiel">Vente de matériel</a></li><li><a href="services.html#maintenance">Maintenance</a></li><li><a href="services.html#formation">Formation</a></li><li><a href="services.html#carburant">Surveillance carburant</a></li></ul>
         <ul><li><h2>Contact</h2></li><li><a href="contact.html">Conakry, Guinée</a></li><li><a href="tel:+224610050505">T: +224 610 05 05 05</a></li><li><a href="mailto:contact@bolerotraker.com">contact@bolerotraker.com</a></li></ul>
       </div></div>
     </div>
