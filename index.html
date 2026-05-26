@@ -84,51 +84,46 @@
         </button>
 
         <!--Main Nav-->
-<nav id="navbar-menu" aria-label="main navigation">
+<nav id="navbar-menu" aria-label="navigation principale">
     <ul>
-            <li class="" id="home">
-                
-            <a class="active" href="#main">
-                        Accueil
-                    </a>
-                
-            </li>
-            <li class="dropdown" id="services">
-                
-                    <a class="dropdown-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="services-submenu">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu" id="services-submenu">
-                      <li><a class="dropdown-menu-item" href="mobile-telematics-installations/">Installations télématiques mobiles</a></li>
-                      <li><a class="dropdown-menu-item" href="fleet-electronics-solutions/">Solutions électronique embarquée</a></li>
-                      <li><a class="dropdown-menu-item" href="consultative-solution-design/">Conception de solutions</a></li>
-                      <li><a class="dropdown-menu-item" href="device-sales/">Vente de matériel</a></li>
-                      <li><a class="dropdown-menu-item" href="maintenance-support/">Maintenance & support</a></li>
-                      <li><a class="dropdown-menu-item" href="training-education/">Formation</a></li>
-                    </ul>
-                
-            </li>
-                <li class="" id="about-us">
-                
-                  <a href="#about">
-                        À propos
-                    </a>
-                
-            </li>
-                <li class="" id="faqs">
-                
-                  <a href="#faqs">
-                        FAQ
-                    </a>
-                
-            </li>
-            <li class="" id="contact">
-                
-                  <a href="#contact">
-                        Contact
-                    </a>
-                
-            </li>
+        <li id="home">
+            <a class="active" href="/">Accueil</a>
+        </li>
+        <li class="dropdown" id="services">
+            <a class="dropdown-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="services-submenu">Services</a>
+            <ul class="dropdown-menu" id="services-submenu">
+                <li><a class="dropdown-menu-item" href="mobile-telematics-installations.html">
+                    <span class="dmi-title">Installations télématiques</span>
+                    <span class="dmi-desc">GPS, caméras &amp; capteurs sur site</span>
+                </a></li>
+                <li><a class="dropdown-menu-item" href="fleet-electronics-solutions.html">
+                    <span class="dmi-title">Solutions embarquées</span>
+                    <span class="dmi-desc">Intégration électronique de flotte</span>
+                </a></li>
+                <li><a class="dropdown-menu-item" href="consultative-solution-design.html">
+                    <span class="dmi-title">Conception de solutions</span>
+                    <span class="dmi-desc">Architecture télématique sur mesure</span>
+                </a></li>
+                <li><a class="dropdown-menu-item" href="device-sales.html">
+                    <span class="dmi-title">Vente de matériel</span>
+                    <span class="dmi-desc">Trackers 4G, caméras, capteurs</span>
+                </a></li>
+                <li><a class="dropdown-menu-item" href="maintenance-support.html">
+                    <span class="dmi-title">Maintenance &amp; support</span>
+                    <span class="dmi-desc">Contrats &amp; interventions terrain</span>
+                </a></li>
+                <li><a class="dropdown-menu-item" href="training-education.html">
+                    <span class="dmi-title">Formation</span>
+                    <span class="dmi-desc">Pour vos équipes &amp; opérateurs</span>
+                </a></li>
+            </ul>
+        </li>
+        <li id="about-us">
+            <a href="about.html">À propos</a>
+        </li>
+        <li id="contact">
+            <a href="contact.html">Contact</a>
+        </li>
     </ul>
 </nav>
 
@@ -317,7 +312,32 @@
     <div class="cs-content">
       <span class="cs-topper">FAQ</span>
       <h2 class="cs-title">Questions fréquentes</h2>
-      <p class="cs-text">Consultez nos réponses aux questions courantes. Cette section est temporaire.</p>
+      <div class="faq-list">
+        <details>
+          <summary>Comment fonctionne le suivi GPS en temps réel ?</summary>
+          <p>Nos dispositifs transmettent la position via le réseau mobile à notre plateforme cloud, affichant la position, la vitesse et l'historique des trajets.</p>
+        </details>
+        <details>
+          <summary>Quels sont les coûts associés ?</summary>
+          <p>Les coûts incluent l'achat/installation du matériel et un abonnement mensuel pour la connectivité et la plateforme. Contactez-nous pour un devis personnalisé.</p>
+        </details>
+        <details>
+          <summary>Est-ce que le système fonctionne hors de la Guinée ?</summary>
+          <p>Nos abonnements couvrent la région selon le forfait. Pour déploiements internationaux, nous proposons des options roaming ou données globales.</p>
+        </details>
+        <details>
+          <summary>Peut-on intégrer les données à un système tiers ?</summary>
+          <p>Oui — nous fournissons des APIs et des flux de données pour intégration avec vos outils métier ou ERP.</p>
+        </details>
+        <details>
+          <summary>Comment sont protégées les données ?</summary>
+          <p>Les données sont stockées sur des serveurs sécurisés et les accès sont protégés par authentification. Nous appliquons des pratiques standard de sécurité.</p>
+        </details>
+        <details>
+          <summary>Proposez-vous des formations ?</summary>
+          <p>Oui, nous proposons des formations pour administrateurs et opérateurs afin d'exploiter la plateforme efficacement.</p>
+        </details>
+      </div>
     </div>
   </div>
 </section>
@@ -367,7 +387,7 @@
     <p>
       Vous cherchez un partenaire local à Conakry pour votre projet de suivi GPS ou de gestion de flotte ? Contactez BoleroTraker dès aujourd'hui pour un devis.
     </p>
-    <a href="#contact" class="button-solid">Demander un devis gratuit</a>
+    <a href="contact.html" class="button-solid">Demander un devis gratuit</a>
   </div>
   <picture class="">
       <source type="image/webp" srcset="images/final_home_img-200w.webp 200w, images/final_home_img-400w.webp 400w, images/final_home_img-850w.webp 850w, images/final_home_img-1920w.webp 1920w, images/final_home_img-2415w.webp 2415w" sizes="(max-width: 400px) 400px, (max-width:
@@ -381,16 +401,6 @@
 
 </section>
 
-<!-- Projects placeholder section -->
-<section id="projects" aria-label="Projects">
-  <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">Projets</span>
-      <h2 class="cs-title">Exemples de projets</h2>
-      <p class="cs-text">Quelques projets récents — contenu temporaire.</p>
-    </div>
-  </div>
-</section>
 
 </main>
         <!-- ============================================ -->
@@ -406,49 +416,26 @@
         <div class="right-section">
             <div class="lists">
                 <ul>
-                    <li>
-                        <h2>Informations</h2>
-                    </li>
-                    <li>
-                      <a href="#main">Accueil</a>
-                    </li>
-                    <li>
-                      <a href="#about">À propos</a>
-                    </li>
-                    <li>
-                      <a href="#projects">Projets</a>
-                    </li>
-                    <li>
-                      <a href="#reviews">Avis</a>
-                    </li>
-                    <li>
-                      <a href="#contact">Contact</a>
-                    </li>
+                    <li><h2>Navigation</h2></li>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <ul>
-                    <li>
-                        <h2>Services</h2>
-                    </li>
-                    <li><a href="mobile-telematics-installations/">Installations télématiques mobiles</a></li>
-                    <li><a href="fleet-electronics-solutions/">Solutions électronique embarquée</a></li>
-                    <li><a href="consultative-solution-design/">Conception de solutions</a></li>
-                    <li><a href="device-sales/">Vente de matériel</a></li>
-                    <li><a href="maintenance-support/">Maintenance & support</a></li>
-                    <li><a href="training-education/">Formation</a></li>
+                    <li><h2>Services</h2></li>
+                    <li><a href="mobile-telematics-installations.html">Installations télématiques</a></li>
+                    <li><a href="fleet-electronics-solutions.html">Solutions embarquées</a></li>
+                    <li><a href="consultative-solution-design.html">Conception de solutions</a></li>
+                    <li><a href="device-sales.html">Vente de matériel</a></li>
+                    <li><a href="maintenance-support.html">Maintenance &amp; support</a></li>
+                    <li><a href="training-education.html">Formation</a></li>
                 </ul>
                 <ul>
-                    <li>
-                        <h2>Contact</h2>
-                    </li>
-                    <li>
-                      <a href="#contact">Conakry, Guinée</a>
-                    </li>
-                    <li>
-                        <a href="tel:+224610050505">T: +224 610 05 05 05</a>
-                    </li>
-                    <li>
-                        <a href="mailto:contact@bolerotraker.com">Envoyer un email</a>
-                    </li>
+                    <li><h2>Contact</h2></li>
+                    <li><a href="contact.html">Conakry, Guinée</a></li>
+                    <li><a href="tel:+224610050505">T: +224 610 05 05 05</a></li>
+                    <li><a href="mailto:contact@bolerotraker.com">contact@bolerotraker.com</a></li>
                 </ul>
             </div>
         </div>

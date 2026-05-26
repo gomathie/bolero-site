@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git stash *)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\gomat\\\\OneDrive\\\\Bureau\\\\PILOT-TELEMATICS\\\\BALDE BOLERO\\\\Bolero webSite\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)"
+    ]
+  }
+}
