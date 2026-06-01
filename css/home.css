@@ -209,6 +209,72 @@
 }
 
 /*-- -------------------------- -->
+<---        Radar Ping          -->
+<--- -------------------------- -*/
+
+@keyframes radar-ring-out {
+  0%   { transform: scale(0.04); opacity: 0.9; }
+  65%  { opacity: 0.35; }
+  100% { transform: scale(1);    opacity: 0;   }
+}
+
+@keyframes radar-dot-pulse {
+  0%, 100% { box-shadow: 0 0 0 0      color-mix(in oklch, var(--primary) 50%, transparent); }
+  50%       { box-shadow: 0 0 0 .9rem color-mix(in oklch, var(--primary)  0%, transparent); }
+}
+
+.radar-wrap { display: none; }
+
+@media only screen and (min-width: 48rem) {
+  .radar-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 22rem;
+    height: 22rem;
+    flex-shrink: 0;
+    margin-left: auto;
+    pointer-events: none;
+  }
+  .radar-wrap::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid color-mix(in oklch, var(--primary) 20%, transparent);
+  }
+  .radar-dot {
+    position: relative;
+    z-index: 2;
+    width: 2.75rem;
+    height: 2.75rem;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    animation: radar-dot-pulse 3s ease-in-out infinite;
+  }
+  .radar-dot svg {
+    width: 1.375rem;
+    height: 1.375rem;
+  }
+  .radar-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1.5px solid var(--primary);
+    opacity: 0;
+    animation: radar-ring-out 3s ease-out infinite;
+  }
+  .radar-ring:nth-child(2) { animation-delay: 0s; }
+  .radar-ring:nth-child(3) { animation-delay: 1s; }
+  .radar-ring:nth-child(4) { animation-delay: 2s; }
+}
+
+/*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
 

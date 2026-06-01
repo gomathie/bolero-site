@@ -1150,6 +1150,7 @@ body.dark-mode.interior #navigation .logo .dark {
     width: auto;
     height: 100%;
     display: block;
+    filter: brightness(0) invert(1);
   }
   #footer .left-section p {
     font-size: 0.875rem;

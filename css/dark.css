@@ -87,6 +87,18 @@
   }
   body.dark-mode .dmt-sun { opacity: 0; }
   body.dark-mode .dmt-moon { opacity: 1; }
+
+  body.dark-mode #navigation .logo img {
+    filter:
+      drop-shadow( 1px  0    0 #fbbf24)
+      drop-shadow(-1px  0    0 #fbbf24)
+      drop-shadow( 0    1px  0 #fbbf24)
+      drop-shadow( 0   -1px  0 #fbbf24)
+      drop-shadow( 0.7px  0.7px 0 #fbbf24)
+      drop-shadow(-0.7px -0.7px 0 #fbbf24)
+      drop-shadow( 0.7px -0.7px 0 #fbbf24)
+      drop-shadow(-0.7px  0.7px 0 #fbbf24);
+  }
 }
 /* Desktop */
 @media only screen and (min-width: 64em) {

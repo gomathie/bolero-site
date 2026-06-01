@@ -56,86 +56,7 @@
 <!-- ============================================ -->
 
 
-<div id="navigation">
-    <div aria-hidden="true" class="background-color-div">
-        <!--This div is used to overcome a z-index issue where the open
-            #navbar-menu is on top of the #navigation. This bar places itself 
-            the #navbar-menu so that menu appears behind the #navigation
-        -->
-    </div>
-    <div class="container">
-        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
-        <a class="logo" aria-label="click to go to home page" href="/">
-            <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
-            <img class="light" aria-hidden="true" src="images/logo-light.png" decoding="async" alt="logo" width="221" height="66">
-
-            <!--Dark Colored Logo-->
-            <img class="dark" aria-hidden="true" src="images/logo-blue.png" decoding="async" loading="lazy" alt="logo" width="221" height="66">
-             <!-- <span>LOGO HERE</span> -->
-        </a>
-
-        <!--Mobile Nav toggle-->
-        <button type="button" class="hamburger-menu" aria-expanded="false" aria-controls="navbar-menu">
-            <!-- <span class="visually-hidden">Menu</span> -->
-            <span aria-hidden="true"></span>
-        </button>
-
-        <!--Main Nav-->
-<nav id="navbar-menu" aria-label="navigation principale">
-    <ul>
-        <li id="home">
-            <a class="active" href="/">Accueil</a>
-        </li>
-        <li class="dropdown" id="services">
-            <a class="dropdown-toggle" href="#services" tabindex="0" aria-expanded="false" aria-controls="services-submenu">Services</a>
-            <ul class="dropdown-menu" id="services-submenu">
-                <li><a class="dropdown-menu-item" href="services.html#installations">
-                    <span class="dmi-title">Installations télématiques</span>
-                    <span class="dmi-desc">GPS, caméras &amp; capteurs sur site</span>
-                </a></li>
-                <li><a class="dropdown-menu-item" href="services.html#solutions-embarquees">
-                    <span class="dmi-title">Solutions embarquées</span>
-                    <span class="dmi-desc">Intégration électronique de flotte</span>
-                </a></li>
-                <li><a class="dropdown-menu-item" href="services.html#conception">
-                    <span class="dmi-title">Conception de solutions</span>
-                    <span class="dmi-desc">Architecture télématique sur mesure</span>
-                </a></li>
-                <li><a class="dropdown-menu-item" href="services.html#vente-materiel">
-                    <span class="dmi-title">Vente de matériel</span>
-                    <span class="dmi-desc">Trackers 4G, caméras, capteurs</span>
-                </a></li>
-                <li><a class="dropdown-menu-item" href="services.html#maintenance">
-                    <span class="dmi-title">Maintenance &amp; support</span>
-                    <span class="dmi-desc">Contrats &amp; interventions terrain</span>
-                </a></li>
-                <li><a class="dropdown-menu-item" href="services.html#formation">
-                    <span class="dmi-title">Formation</span>
-                    <span class="dmi-desc">Pour vos équipes &amp; opérateurs</span>
-                </a></li>
-              <li><a class="dropdown-menu-item" href="services.html#carburant"><span class="dmi-title">Surveillance carburant</span><span class="dmi-desc">Capteurs, alertes &amp; analyse de consommation</span></a></li>
-            </ul>
-        </li>
-        <li id="about-us">
-            <a href="about.html">À propos</a>
-        </li>
-        <li id="contact">
-            <a href="contact.html">Contact</a>
-        </li>
-    </ul>
-</nav>
-
-        <!--Dark Mode toggle-->
-        <button id="dark-mode-toggle" aria-label="Basculer le mode sombre">
-        <span class="dmt-track">
-          <span class="dmt-thumb">
-            <svg class="dmt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            <svg class="dmt-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          </span>
-        </span>
-      </button>
-    </div>
-</div>
+<div id="nav-placeholder"></div>
         <main id="main">
 <!-- Enter html code below -->
 <!-- ============================================ -->
@@ -181,6 +102,14 @@
           </span>
         </a>
       </div>
+    </div>
+    <div class="radar-wrap" aria-hidden="true">
+      <div class="radar-dot">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      </div>
+      <div class="radar-ring"></div>
+      <div class="radar-ring"></div>
+      <div class="radar-ring"></div>
     </div>
   </div>
 </section>
@@ -485,71 +414,8 @@
 <!--                   Footer                     -->
 <!-- ============================================ -->
 
-<footer id="footer">
-    <div class="container">
-        <div class="left-section">
-            <a class="logo" href="/"><img loading="lazy" decoding="async" src="images/logo-light.png" alt="logo" width="221" height="66"></a>
-            <!-- <a class="logo" href="/"><span>LOGO HERE</span></a> -->
-        </div>
-        <div class="right-section">
-            <div class="lists">
-                <ul>
-                    <li><h2>Navigation</h2></li>
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="services.html">Nos services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <ul>
-                    <li><h2>Services</h2></li>
-                    <li><a href="services.html#installations">Installations télématiques</a></li>
-                    <li><a href="services.html#solutions-embarquees">Solutions embarquées</a></li>
-                    <li><a href="services.html#conception">Conception de solutions</a></li>
-                    <li><a href="services.html#vente-materiel">Vente de matériel</a></li>
-                    <li><a href="services.html#maintenance">Maintenance &amp; support</a></li>
-                    <li><a href="services.html#formation">Formation</a></li>
-                </ul>
-                <ul>
-                    <li><h2>Contact</h2></li>
-                    <li><a href="contact.html">Conakry, Guinée</a></li>
-                    <li><a href="tel:+224610050505">T: +224 610 05 05 05</a></li>
-                    <li><a href="mailto:contact@bolerotraker.com">contact@bolerotraker.com</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="credit">
-        <span>Conçu et codé par</span>
-        <a href="https://www.trace365.net" target="_blank" rel="noopener">Trace365.net</a>
-        <span class="copyright"> Copyright 2026 - Present</span>
-    </div>
-</footer>
-
-        <script defer="" src="js/nav.js"></script>
-        <script defer="" src="js/dark.js"></script>
-
-        <!--
-        This script adds a class to the body after scrolling 100px
-        and we used these body.scroll styles to create some on scroll 
-        animations with the navbar
-    -->
-        <script defer="">
-            document.addEventListener('scroll', (e) => {
-                const scroll = document.documentElement.scrollTop;
-                if (scroll >= 100) {
-                    document
-                        .querySelector('body')
-                        .classList
-                        .add('scroll')
-                } else {
-                    document
-                        .querySelector('body')
-                        .classList
-                        .remove('scroll')
-                }
-            });
-        </script>
-
-    
-</body></html>
+<div id="footer-placeholder"></div>
+        <script defer src="/js/components.js"></script>
+        <script defer src="/js/nav.js"></script>
+        <script defer src="/js/dark.js"></script>
+    </body></html>
